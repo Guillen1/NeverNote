@@ -63,6 +63,7 @@ public class NoteServiceImpl implements NoteService {
 	 * @return
 	 */
 	public void updateNote(Note note, Long noteId){
+		note.setNoteId(noteId);
 		noteRepository.save(note);
 	}
 
